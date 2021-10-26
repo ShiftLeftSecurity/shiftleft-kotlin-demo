@@ -1,3 +1,14 @@
+# ShiftLeft Kotlin Demo
+
+This repository contains a vulnerable Kotlin application that is used in automated demos on shiftleft.io
+
+It is derived from: https://github.com/optiv/InsecureShop
+
+For more information on how to secure Kotlin applications with ShiftLeft CORE see [the documentation at docs.shiftleft.io](https://docs.shiftleft.io/ngsast/analyzing-applications/kotlin)
+
+For more information on how to setup ShiftLeft CORE on GitHub Actions see [the documentation at docs.shiftleft.io](https://docs.shiftleft.io/ngsast/workflows/github) 
+
+
 # 📱 InsecureShop
 
 * InsecureShop is an Android application that is designed to be intentionally vulnerable. 
