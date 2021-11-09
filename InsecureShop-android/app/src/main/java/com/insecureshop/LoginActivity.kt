@@ -9,13 +9,13 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import androidx.databinding.DataBindingUtil
 import com.insecureshop.databinding.ActivityLoginBinding
 import com.insecureshop.util.Prefs
 import com.insecureshop.util.Util
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : Activity() {
     lateinit var mBinding: ActivityLoginBinding
 
     @RequiresApi(Build.VERSION_CODES.M)
