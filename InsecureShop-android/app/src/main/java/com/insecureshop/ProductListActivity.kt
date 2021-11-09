@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.insecureshop.broadcast.ProductDetailBroadCast
 import com.insecureshop.util.Prefs
@@ -14,7 +14,7 @@ import com.insecureshop.util.Util
 import kotlinx.android.synthetic.main.activity_product_list.*
 
 
-class ProductListActivity : AppCompatActivity() {
+class ProductListActivity : Activity() {
     private val productDetailBroadCast = ProductDetailBroadCast()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

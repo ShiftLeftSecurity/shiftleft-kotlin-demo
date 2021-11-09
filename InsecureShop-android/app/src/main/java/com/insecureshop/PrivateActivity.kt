@@ -3,12 +3,12 @@ package com.insecureshop
 import android.content.Intent
 import android.os.Bundle
 import android.webkit.WebView
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import com.insecureshop.util.Prefs
 import kotlinx.android.synthetic.main.activity_product_list.*
 
 
-class PrivateActivity : AppCompatActivity() {
+class PrivateActivity : Activity() {
 
     val USER_AGENT =
         "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Mobile Safari/537.36"
