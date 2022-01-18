@@ -25,13 +25,25 @@ class AboutUsActivity : Activity() {
         super.onDestroy()
     }
 
+    // the following fn provides a longer dataflow for static analysis demos
+    fun trimStr(s: String): String {
+      val trimmed1 = s.trim()
+      val trimmed2 = trimmed1.trimMargin()
+      val trimmed3 = trimmed2.trimStart()
+      val dropped4 = trimmed3.drop(0)
+      return dropped4
+    }
+
     fun onSendData(view: View) {
         val userName = Prefs.username!!
         val password = Prefs.password!!
 
+        val trimmedUsername = trimStr(userName)
+        val trimmedPassword = trimStr(password)
+
         val intent = Intent("com.insecureshop.action.BROADCAST")
-        intent.putExtra("username", userName)
-        intent.putExtra("password", password)
+        intent.putExtra("username", trimmedUsername)
+        intent.putExtra("password", trimmedPassword)
         sendBroadcast(intent)
 
         textView.text = "InsecureShop is an intentionally designed vulnerable android app built in Kotlin."
