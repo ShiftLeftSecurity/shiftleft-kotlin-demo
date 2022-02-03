@@ -19,7 +19,7 @@ class PrivateActivity : Activity() {
         setSupportActionBar(toolbar)
         title = getString(R.string.webview)
 
-        val webview = findViewById<WebView>(R.id.webview)
+        val webview = findViewById<WebView>(R.id.webview) as WebView
 
         webview.settings.javaScriptEnabled = true
         webview.settings.loadWithOverviewMode = true
