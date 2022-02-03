@@ -25,7 +25,7 @@ class WebView2Activity : Activity() {
             return
         }
 
-        val webview = findViewById<WebView>(R.id.webview)
+        val webview = findViewById<WebView>(R.id.webview) as WebView
 
         webview.settings.javaScriptEnabled = true
         webview.settings.loadWithOverviewMode = true
