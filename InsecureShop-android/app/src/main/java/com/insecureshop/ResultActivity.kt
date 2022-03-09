@@ -1,10 +1,10 @@
 package com.insecureshop
 
 import android.os.Bundle
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 
 
-class ResultActivity : Activity() {
+class ResultActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

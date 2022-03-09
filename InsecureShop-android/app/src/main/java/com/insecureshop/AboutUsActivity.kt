@@ -4,12 +4,12 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
 import android.view.View
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 import com.insecureshop.util.Prefs
 import kotlinx.android.synthetic.main.activity_about_us.*
 
 
-class AboutUsActivity : Activity() {
+class AboutUsActivity : AppCompatActivity() {
 
     lateinit var receiver: CustomReceiver
 

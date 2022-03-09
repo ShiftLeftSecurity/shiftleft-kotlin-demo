@@ -2,13 +2,13 @@ package com.insecureshop
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.insecureshop.util.Util
 import kotlinx.android.synthetic.main.activity_cart_list.*
 
 
-class CartListActivity : Activity() {
+class CartListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

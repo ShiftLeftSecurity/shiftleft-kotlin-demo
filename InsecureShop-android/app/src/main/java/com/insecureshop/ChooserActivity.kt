@@ -8,13 +8,13 @@ import android.os.Environment
 import android.os.Parcelable
 import android.provider.OpenableColumns
 import android.util.Log
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.io.InputStream
 import java.io.OutputStream
 
 
-class ChooserActivity : Activity() {
+class ChooserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
