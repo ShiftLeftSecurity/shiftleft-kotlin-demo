@@ -64,3 +64,5 @@ https://docs.insecureshopapp.com
 
 * [Rujul Gandhi](https://www.linkedin.com/in/rujul-gandhi-3953337a/): Thank you for your contributions towards this app
 * [Sergey Toshin](https://twitter.com/_bagipro) [(Oversecured)](https://oversecured.com): Thank you for your amazing research on Android security which prompted me to start this project
+
+aaa
