@@ -17,7 +17,6 @@ class WebViewActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
-        setSupportActionBar(toolbar)
         title = getString(R.string.webview)
 
         val webview = findViewById<WebView>(R.id.webview) as WebView

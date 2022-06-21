@@ -25,7 +25,6 @@ class ProductListActivity : Activity() {
             return
         }
         setContentView(R.layout.activity_product_list)
-        setSupportActionBar(toolbar)
 
         val intentFilter = IntentFilter("com.insecureshop.action.PRODUCT_DETAIL")
         registerReceiver(productDetailBroadCast, intentFilter)

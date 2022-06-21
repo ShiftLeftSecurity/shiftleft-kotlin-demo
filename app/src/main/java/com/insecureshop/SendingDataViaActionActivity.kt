@@ -17,7 +17,6 @@ class SendingDataViaActionActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_implicit_intent_for_non_exported)
-        setSupportActionBar(toolbar)
     }
 
     fun onSendData(view: View) {
