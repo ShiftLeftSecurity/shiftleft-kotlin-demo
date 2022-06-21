@@ -21,9 +21,18 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
+        maven {
+           url = "https://no.such.url/gradle/libs-releases/"
+           // vulnerability: Hardcoded Credentials
+           credentials {
+                username = "barnabyjack"
+                password = "PhitiTeeLiethi0eephi"
+           }
+        }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
