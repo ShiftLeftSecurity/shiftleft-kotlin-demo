@@ -28,6 +28,9 @@ jobs:
     - name: Run Gradle task `gatherDependencies`
       run: |
         ./gradlew gatherDependencies
+    - name: List gathered dependencies
+      run: |
+        ls ./build/gatheredDependencies
     - name: Analyze codebase
       run: |
         ${GITHUB_WORKSPACE}/sl analyze --app shiftleft-kotlin-demo --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --kotlin . -- --no-stdlib-jars --classpath ./build/gatheredDependencies
