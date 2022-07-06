@@ -22,9 +22,15 @@ jobs:
       shell: bash
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
+    - name: Generate Gradle wrapper
+      run: |
+        gradle wrapper --gradle-version 7.4.2
+    - name: Run Gradle task `gatherDependencies`
+      run: |
+        ./gradlew gatherDependencies
     - name: Analyze codebase
       run: |
-        ${GITHUB_WORKSPACE}/sl analyze --app shiftleft-kotlin-demo --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --kotlin . -- --no-stdlib-jars --classpath build/gatheredDependencies
+        ${GITHUB_WORKSPACE}/sl analyze --app shiftleft-kotlin-demo --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --kotlin . -- --no-stdlib-jars --classpath ./build/gatheredDependencies
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
 
