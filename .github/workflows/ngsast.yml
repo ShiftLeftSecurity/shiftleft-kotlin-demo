@@ -25,9 +25,9 @@ jobs:
     - name: Generate Gradle wrapper
       run: |
         gradle wrapper --gradle-version 7.4.2
-    - name: Run Gradle task `gatherDependencies`
+    - name: Run Gradle task `gatherDeps`
       run: |
-        ./gradlew gatherDependencies
+        ./gradlew gatherDeps
     - name: List gathered dependencies
       run: |
         ls ./build/gatheredDependencies
